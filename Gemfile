@@ -15,9 +15,11 @@ gem 'devise'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'rspec', '~> 3.5'
-gem "haml-rails", "~> 1.0"
+gem 'haml-rails', '~> 1.0'
 gem 'simple_form'
-gem 'bootstrap', '~> 4.3.1'
+gem 'bootstrap'
+gem 'jquery-rails'
+
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
