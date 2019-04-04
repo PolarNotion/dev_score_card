@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyText
+  git_repo: MyString
+  assignment: MyText
+  id: 1
+
+two:
+  name: MyString
+  description: MyText
+  git_repo: MyString
+  assignment: MyText
+  id: 1
