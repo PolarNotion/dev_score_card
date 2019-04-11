@@ -17,7 +17,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'rspec', '~> 3.5'
 gem 'haml-rails', '~> 1.0'
 gem 'simple_form'
-gem 'bootstrap'
+gem 'bootstrap', '~> 4.1.0'
+gem 'autoprefixer-rails'
 gem 'jquery-rails'
 
 

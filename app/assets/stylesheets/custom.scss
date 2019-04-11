@@ -1,0 +1,104 @@
+$primaryColor: #d3edeb;
+$secondaryColor: black;
+
+:root {
+  font-size: 16px;
+}
+
+html {
+  min-height: 100vh;
+}
+
+body {
+  background-color: $primaryColor;
+  color: $secondaryColor;
+  font-family: IBM-Plex-Mono, monospace;
+  font-size: 1rem;
+  margin: 0px 0px;
+  padding: 0;
+  padding-bottom: 50px;
+}
+
+h3, .h3 {
+  font-size: 1.25rem;
+}
+
+h2, .h2 {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+h1, .h1 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-top: 0px;
+}
+
+p {
+  margin-top: 20px;
+}
+
+img {
+  max-width: 100%;
+}
+
+nav {
+  border-bottom: 4px solid $secondaryColor;
+  height: 60px;
+  margin-bottom: 2vh;
+  &.nav-fixed {
+    position: fixed;
+    top: 0px;
+    border: 4px solid $secondaryColor;
+    left: 0;
+    right: 0;
+    background-color: $primaryColor;
+    z-index: 999;
+  }
+  ul {
+    list-style-type: none;
+    display: block;
+    float: right;
+    margin: 0;
+    padding-left: 0;
+    li {
+      display: inline-flex;
+      margin: 0 -2px;
+      a {
+        padding: 16px 27px;
+        color: $secondaryColor;
+        text-decoration: none;
+        &:hover,
+        &:active,
+        &.active,
+        &:focus {
+          color: $secondaryColor;
+          background-color: rgba($secondaryColor, 0.1);
+        }
+      }
+    }
+  }
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+p,
+.ibm-plex-mono,
+.cover-content,
+.cover-content::after {
+  font-family: IBM-Plex-Mono, monospace;
+}
+
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+label {
+  cursor: pointer;
+}
+
+.border {
+  border: 2px solid $secondaryColor;
+}

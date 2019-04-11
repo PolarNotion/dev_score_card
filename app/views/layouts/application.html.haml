@@ -1,11 +1,20 @@
 !!!
 %html
   %head
-    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-    %title DevScoreCard
+    %meta{content: "width=device-width, initial-scale=1", name: "viewport"}
+    %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
+    %meta{content: "no-preview", name: "turbolinks-cache-control"}
+
+    %title Dev Score Card
     = csrf_meta_tags
     = csp_meta_tag
-    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+
+    %link{crossorigin: "anonymous", href: "https://use.fontawesome.com/releases/v5.4.1/css/all.css", integrity: "sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz", rel: "stylesheet"}
+    %link{href: "custom.scss", rel: "stylesheet", type: "text/css"}/
+
+    %script{src: "https://code.jquery.com/jquery-3.3.1.slim.min.js"}
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   %body
     = yield
